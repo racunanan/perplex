@@ -134,7 +134,7 @@ Partial Class MainPage
         'RemoveTaskButton
         '
         Me.RemoveTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.RemoveTaskButton.Location = New System.Drawing.Point(343, 302)
+        Me.RemoveTaskButton.Location = New System.Drawing.Point(337, 302)
         Me.RemoveTaskButton.Name = "RemoveTaskButton"
         Me.RemoveTaskButton.Size = New System.Drawing.Size(140, 23)
         Me.RemoveTaskButton.TabIndex = 1

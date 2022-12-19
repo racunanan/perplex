@@ -25,22 +25,23 @@ Partial Class StartTask
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CancelStartTaskButton = New System.Windows.Forms.Button()
         Me.FileList = New System.Windows.Forms.ComboBox()
+        Me.startButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(96, 141)
+        Me.Label1.Location = New System.Drawing.Point(39, 68)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(241, 21)
+        Me.Label1.Size = New System.Drawing.Size(130, 21)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Filename/Path: C://somePath/"
+        Me.Label1.Text = "Filename/Path: "
         '
         'CancelStartTaskButton
         '
         Me.CancelStartTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CancelStartTaskButton.Location = New System.Drawing.Point(351, 214)
+        Me.CancelStartTaskButton.Location = New System.Drawing.Point(355, 130)
         Me.CancelStartTaskButton.Name = "CancelStartTaskButton"
         Me.CancelStartTaskButton.Size = New System.Drawing.Size(99, 23)
         Me.CancelStartTaskButton.TabIndex = 8
@@ -51,19 +52,32 @@ Partial Class StartTask
         '
         Me.FileList.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.FileList.FormattingEnabled = True
-        Me.FileList.Location = New System.Drawing.Point(351, 143)
+        Me.FileList.Location = New System.Drawing.Point(209, 66)
         Me.FileList.Name = "FileList"
         Me.FileList.Size = New System.Drawing.Size(304, 23)
         Me.FileList.TabIndex = 9
+        '
+        'startButton
+        '
+        Me.startButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.startButton.Location = New System.Drawing.Point(97, 130)
+        Me.startButton.Name = "startButton"
+        Me.startButton.Size = New System.Drawing.Size(99, 23)
+        Me.startButton.TabIndex = 10
+        Me.startButton.Text = "Start"
+        Me.startButton.UseVisualStyleBackColor = True
         '
         'StartTask
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(575, 187)
+        Me.Controls.Add(Me.startButton)
         Me.Controls.Add(Me.FileList)
         Me.Controls.Add(Me.CancelStartTaskButton)
         Me.Controls.Add(Me.Label1)
+        Me.MaximumSize = New System.Drawing.Size(591, 226)
+        Me.MinimumSize = New System.Drawing.Size(591, 226)
         Me.Name = "StartTask"
         Me.Text = "Start Task"
         Me.ResumeLayout(False)
@@ -74,4 +88,5 @@ Partial Class StartTask
     Friend WithEvents Label1 As Label
     Friend WithEvents CancelStartTaskButton As Button
     Friend WithEvents FileList As ComboBox
+    Friend WithEvents startButton As Button
 End Class

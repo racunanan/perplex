@@ -65,7 +65,7 @@ Partial Class NewTask
         'AddNewTaskButton
         '
         Me.AddNewTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.AddNewTaskButton.Location = New System.Drawing.Point(85, 309)
+        Me.AddNewTaskButton.Location = New System.Drawing.Point(85, 323)
         Me.AddNewTaskButton.Name = "AddNewTaskButton"
         Me.AddNewTaskButton.Size = New System.Drawing.Size(140, 23)
         Me.AddNewTaskButton.TabIndex = 10
@@ -75,7 +75,7 @@ Partial Class NewTask
         'CancelNewTaskButton
         '
         Me.CancelNewTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.CancelNewTaskButton.Location = New System.Drawing.Point(580, 309)
+        Me.CancelNewTaskButton.Location = New System.Drawing.Point(580, 323)
         Me.CancelNewTaskButton.Name = "CancelNewTaskButton"
         Me.CancelNewTaskButton.Size = New System.Drawing.Size(140, 23)
         Me.CancelNewTaskButton.TabIndex = 11
