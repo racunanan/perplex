@@ -16,3 +16,24 @@ C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\code_repos\per
 C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\code_repos\perplex_test\perplex_test\obj\Debug\net7.0-windows\ref\perplex_test.dll
 C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\code_repos\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.AppList.resources
 C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\code_repos\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.MainPage.resources
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\bin\Debug\net7.0-windows\perplex_test.exe
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\bin\Debug\net7.0-windows\perplex_test.deps.json
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\bin\Debug\net7.0-windows\perplex_test.runtimeconfig.json
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\bin\Debug\net7.0-windows\perplex_test.dll
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\bin\Debug\net7.0-windows\perplex_test.pdb
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.vbproj.AssemblyReference.cache
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.AppList.resources
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.MainPage.resources
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.vbproj.GenerateResource.cache
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.AssemblyInfoInputs.cache
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.AssemblyInfo.vb
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.vbproj.CoreCompileInputs.cache
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.dll
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\refint\perplex_test.dll
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.pdb
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.genruntimeconfig.cache
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\ref\perplex_test.dll
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.NewTask.resources
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.StartTask.resources
+C:\Users\John Ivan Loristo\Desktop\VS\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.ERP.resources

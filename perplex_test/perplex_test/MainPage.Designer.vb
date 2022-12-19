@@ -28,9 +28,14 @@ Partial Class MainPage
         Me.RemoveAppButton = New System.Windows.Forms.Button()
         Me.ActiveApps = New System.Windows.Forms.ListBox()
         Me.TasksTab = New System.Windows.Forms.TabPage()
+        Me.TaskList = New System.Windows.Forms.ListBox()
+        Me.StartTaskButton = New System.Windows.Forms.Button()
+        Me.RemoveTaskButton = New System.Windows.Forms.Button()
+        Me.AddTaskButton = New System.Windows.Forms.Button()
         Me.Username = New System.Windows.Forms.Label()
         Me.TabControl1.SuspendLayout()
         Me.AppsTab.SuspendLayout()
+        Me.TasksTab.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -91,6 +96,10 @@ Partial Class MainPage
         '
         'TasksTab
         '
+        Me.TasksTab.Controls.Add(Me.TaskList)
+        Me.TasksTab.Controls.Add(Me.StartTaskButton)
+        Me.TasksTab.Controls.Add(Me.RemoveTaskButton)
+        Me.TasksTab.Controls.Add(Me.AddTaskButton)
         Me.TasksTab.Location = New System.Drawing.Point(4, 24)
         Me.TasksTab.Name = "TasksTab"
         Me.TasksTab.Padding = New System.Windows.Forms.Padding(3)
@@ -98,6 +107,49 @@ Partial Class MainPage
         Me.TasksTab.TabIndex = 1
         Me.TasksTab.Text = "Tasks"
         Me.TasksTab.UseVisualStyleBackColor = True
+        '
+        'TaskList
+        '
+        Me.TaskList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TaskList.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TaskList.FormattingEnabled = True
+        Me.TaskList.ItemHeight = 30
+        Me.TaskList.Location = New System.Drawing.Point(72, 40)
+        Me.TaskList.Name = "TaskList"
+        Me.TaskList.Size = New System.Drawing.Size(675, 214)
+        Me.TaskList.TabIndex = 3
+        '
+        'StartTaskButton
+        '
+        Me.StartTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.StartTaskButton.Location = New System.Drawing.Point(607, 302)
+        Me.StartTaskButton.Name = "StartTaskButton"
+        Me.StartTaskButton.Size = New System.Drawing.Size(140, 23)
+        Me.StartTaskButton.TabIndex = 2
+        Me.StartTaskButton.Text = "Start Task"
+        Me.StartTaskButton.UseVisualStyleBackColor = True
+        '
+        'RemoveTaskButton
+        '
+        Me.RemoveTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.RemoveTaskButton.Location = New System.Drawing.Point(343, 302)
+        Me.RemoveTaskButton.Name = "RemoveTaskButton"
+        Me.RemoveTaskButton.Size = New System.Drawing.Size(140, 23)
+        Me.RemoveTaskButton.TabIndex = 1
+        Me.RemoveTaskButton.Text = "Remove Task"
+        Me.RemoveTaskButton.UseVisualStyleBackColor = True
+        '
+        'AddTaskButton
+        '
+        Me.AddTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.AddTaskButton.Location = New System.Drawing.Point(72, 302)
+        Me.AddTaskButton.Name = "AddTaskButton"
+        Me.AddTaskButton.Size = New System.Drawing.Size(140, 23)
+        Me.AddTaskButton.TabIndex = 0
+        Me.AddTaskButton.Text = "Add Task"
+        Me.AddTaskButton.UseVisualStyleBackColor = True
         '
         'Username
         '
@@ -123,6 +175,7 @@ Partial Class MainPage
         Me.Text = "pERPlex"
         Me.TabControl1.ResumeLayout(False)
         Me.AppsTab.ResumeLayout(False)
+        Me.TasksTab.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -135,4 +188,8 @@ Partial Class MainPage
     Friend WithEvents ActiveApps As ListBox
     Friend WithEvents AddAppButton As Button
     Friend WithEvents RemoveAppButton As Button
+    Friend WithEvents AddTaskButton As Button
+    Friend WithEvents RemoveTaskButton As Button
+    Friend WithEvents StartTaskButton As Button
+    Friend WithEvents TaskList As ListBox
 End Class
