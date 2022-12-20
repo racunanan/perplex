@@ -1,0 +1,46 @@
+{
+    "documentType": "Purchase Order",
+    "company": {
+        
+        "companyName": "",
+        "address": "",
+        "contactNo": "",
+        "TIN": ""
+        
+    },
+    "vendor": {
+        "name": "",
+        "address": "",
+        "contactNo": "",
+        "TIN": ""
+    },
+    "shipTo": {
+        "name": "",
+        "address": "",
+        "contactNo": ""
+    },
+    "poNumber": "",
+    "poDate": "dd/mm/yyyy",
+    "pageNumber": "current/total",
+    "items": [
+        {
+            "itemNo": 1,
+            "vendorItemCode": "",
+            "itemCodeItemDescription": "",
+            "UOM": "",
+            "deliveryDate": "dd/mm/yyyy",
+            "quantity": 1,
+            "unitPrice": 1,
+            "amount": 1
+        }
+    ],
+    "total": 1,
+    "tax": 0.5,
+    "totalPlusTax": 1.5,
+    "termsAndCondition": {
+        "payment": "",
+        "issuedBy": "",
+        "remarks": ""
+    },
+    "stubs": {}
+}
