@@ -1,6 +1,6 @@
 ﻿Public Class NewTask
     Dim apps() As String = {"SAP", "Oracle", "Netsuite"}
-    Dim tasks() As String = {"Purchase Order (PO) Transfer", "Task 2", "Task 3"}
+    Dim tasks() As String = {"Purchase Order (PO) Transfer"}
 
     Private Sub NewTask_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim status As Integer
