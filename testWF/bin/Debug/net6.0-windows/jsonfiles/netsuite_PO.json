@@ -1,0 +1,33 @@
+{
+    "document": "Purchase Order",
+    "companyName": "",
+    "address": "",
+    "poNumber": "",
+    "poDate": "dd/mm/yyyy",
+    "purchaseFrom": {
+        "vendorID": "",
+        "vendorName": "",
+        "address": "",
+        "contactName": ""
+    },
+    "shipTo": {
+        "companyName": "",
+        "address": "",
+        "contactName": ""
+    },
+    "shippingMethod": "",
+    "paymentTerms": "30 days",
+    "requiredByDate": "dd/mm/yyyy",
+    "items" : [
+        {
+            "itemDescription": "",
+            "quantity": "",
+            "unitPrice": "",
+            "amount": ""
+        }
+    ],
+    "subtotal": 1,
+    "salesTax": 0.5,
+    "orderTotal": 1.5,
+    "approvedBy": ""
+}

@@ -1,0 +1,40 @@
+{
+    "operatingUnit": "",
+    "PO": "",
+    "rev": 0,
+    "supplier": "",
+    "shipTo": "",
+    "buyer": "",
+    "created": "dd/month/yyyy hh:mm:ss",
+    "type": "Standard Purchase Order",
+    "site": "",
+    "billTo": "",
+    "status": "",
+    "pCard": "",
+    "contact": "",
+    "currency": "",
+    "total": 1,
+    "description": "",
+    "items": [
+        {
+            "num": 1,
+            "type": "",
+            "item": "",
+            "rev": "",
+            "job": "",
+            "category": "",
+            "description": "",
+            "UOM": "",
+            "quantity": 1,
+            "price": 1,
+            "promised": "",
+            "needBy": "dd/month/yyyy hh:mm:ss",
+            "supplierItem": "",
+            "supplierConfigID": "",
+            "amount": 1,
+            "chargeAccount": ""
+        },
+        {}
+    ],
+    "stubs": {}
+}

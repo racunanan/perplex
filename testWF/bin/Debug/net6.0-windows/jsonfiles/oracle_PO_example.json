@@ -1,0 +1,62 @@
+{
+    "operatingUnit": "",
+    "PO": "2512000855",
+    "rev": 0,
+    "supplier": "XYZ, Inc.",
+    "shipTo": "ABC Warehouse 1",
+    "buyer": "Mr. Juan dela Cruz",
+    "created": "25/10/2022",
+    "type": "Purchase Order",
+    "site": "Anywhere City",
+    "billTo": "ABC Warehouse 1",
+    "status": "",
+    "pCard": "",
+    "contact": "",
+    "currency": "PHP",
+    "total": 37500,
+    "description": "Free delivery",
+    "items": [
+        {
+            "num": 1,
+            "type": "",
+            "item": "Vendor ABC V0001",
+            "rev": "",
+            "job": "",
+            "category": "",
+            "description": "Product X",
+            "UOM": "Piece",
+            "quantity": 150,
+            "price": 250,
+            "promised": "",
+            "needBy": "30/10/2022",
+            "supplierItem": "",
+            "supplierConfigID": "",
+            "amount": 37500,
+            "chargeAccount": ""
+        }
+    ],
+    "stubs": {
+        "sap": {
+            "company": {
+                "companyName": "ABC, Inc.",
+                "address": "Anywhere City",
+                "contactNo": "0123456789",
+                "TIN": "123456789"
+            },
+            "vendor": {
+                "address": "Nowhere City",
+                "contactNo": "0987654321",
+                "TIN": "987654321"
+            },
+            "shipTo": {
+                "contactNo": "0123456789"
+            },
+            "pageNumber": "1/1",
+            "tax": 5625,
+            "totalPlusTax": 43125,
+            "termsAndCondition": {
+                "payment": "30 days"
+            }
+        }
+    }
+}
