@@ -26,4 +26,15 @@ Public Class StartTask
             Filename.Text = OpenFileDialog1.FileName
         End If
     End Sub
+
+    Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
+        Dim oProcess As New Process()
+        Dim oStartInfo As New ProcessStartInfo("py", "./../jsontranslator.py ./../sap_files/sap_PO_example.json 1")
+        oStartInfo.UseShellExecute = False
+        oStartInfo.RedirectStandardOutput = True
+        oProcess.StartInfo = oStartInfo
+        oProcess.StartInfo.CreateNoWindow = True ' to hide cmd window. and it's has to be here,before start and before startinfo=startinfo
+        oProcess.Start()
+        Close()
+    End Sub
 End Class

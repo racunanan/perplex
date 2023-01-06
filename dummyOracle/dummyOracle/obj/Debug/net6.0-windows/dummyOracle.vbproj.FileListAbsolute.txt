@@ -17,3 +17,22 @@ D:\docs 4 deng\cs\eng150\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\refint
 D:\docs 4 deng\cs\eng150\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.pdb
 D:\docs 4 deng\cs\eng150\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.genruntimeconfig.cache
 D:\docs 4 deng\cs\eng150\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\ref\dummyOracle.dll
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\bin\Debug\net6.0-windows\dummyOracle.exe
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\bin\Debug\net6.0-windows\dummyOracle.deps.json
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\bin\Debug\net6.0-windows\dummyOracle.runtimeconfig.json
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\bin\Debug\net6.0-windows\dummyOracle.dll
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\bin\Debug\net6.0-windows\dummyOracle.pdb
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.vbproj.AssemblyReference.cache
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.Form1.resources
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.vbproj.GenerateResource.cache
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.AssemblyInfoInputs.cache
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.AssemblyInfo.vb
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.vbproj.CoreCompileInputs.cache
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.vbproj.CopyComplete
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.dll
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\refint\dummyOracle.dll
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.pdb
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\dummyOracle.genruntimeconfig.cache
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\dummyOracle\dummyOracle\obj\Debug\net6.0-windows\ref\dummyOracle.dll
