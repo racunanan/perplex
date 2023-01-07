@@ -1,4 +1,5 @@
-﻿Public Class NewTask
+﻿
+Public Class NewTask
     Dim apps() As String = {"SAP", "Oracle", "Netsuite"}
     Dim tasks() As String = {"Purchase Order (PO) Transfer"}
 
@@ -32,13 +33,22 @@
         Dim NewSourceChosen As String
         Dim NewDestinationChosen As String
         Dim AddedTask As String
+        Dim SourceToDest As String
 
         NewTaskChosen = NewTaskList.GetItemText(NewTaskList.SelectedItem)
         NewSourceChosen = AppListDropdown.GetItemText(AppListDropdown.SelectedItem)
         NewDestinationChosen = AppListDropdown2.GetItemText(AppListDropdown2.SelectedItem)
         AddedTask = NewTaskChosen + ": " + NewSourceChosen + " to " + NewDestinationChosen
+        SourceToDest = NewSourceChosen + " to " + NewDestinationChosen
 
         If AddedTask <> "" Then
+            'If SourceToDest.Equals("SAP to Oracle") Then
+            'GlobalVariables.mode = "1"
+            'ElseIf SourceToDest.Equals("SAP to NetSuite") Then
+            'balVariables.mode = "2"
+            'ElseIf SourceToDest.Equals("Oracle to NetSuite") Then
+            'GlobalVariables.mode = "3"
+            'End If
             My.Forms.MainPage.TaskList.Items.Add(AddedTask)
             Close()
         End If
@@ -49,4 +59,8 @@
         Close()
     End Sub
 
+End Class
+
+Public Class GlobalVariables
+    Public Shared mode As String
 End Class

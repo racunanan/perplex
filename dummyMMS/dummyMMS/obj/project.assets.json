@@ -61,11 +61,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\docs 4 deng\\cs\\eng150\\dummyMMS\\dummyMMS\\dummyMMS.vbproj",
+      "projectUniqueName": "D:\\docs4deng\\cs\\babu\\perplex\\dummyMMS\\dummyMMS\\dummyMMS.vbproj",
       "projectName": "dummyMMS",
-      "projectPath": "D:\\docs 4 deng\\cs\\eng150\\dummyMMS\\dummyMMS\\dummyMMS.vbproj",
+      "projectPath": "D:\\docs4deng\\cs\\babu\\perplex\\dummyMMS\\dummyMMS\\dummyMMS.vbproj",
       "packagesPath": "C:\\Users\\MYPC\\.nuget\\packages\\",
-      "outputPath": "D:\\docs 4 deng\\cs\\eng150\\dummyMMS\\dummyMMS\\obj\\",
+      "outputPath": "D:\\docs4deng\\cs\\babu\\perplex\\dummyMMS\\dummyMMS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

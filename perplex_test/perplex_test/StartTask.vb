@@ -30,6 +30,7 @@ Public Class StartTask
     Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
         Dim oProcess As New Process()
         Dim oStartInfo As New ProcessStartInfo("py", "./../jsontranslator.py ./../sap_files/sap_PO_example.json 1")
+        'Dim oStartInfo As New ProcessStartInfo("py", "./../jsontranslator.py" + " " + OpenFileDialog1.FileName + " " + GlobalVariables.mode)
         oStartInfo.UseShellExecute = False
         oStartInfo.RedirectStandardOutput = True
         oProcess.StartInfo = oStartInfo
