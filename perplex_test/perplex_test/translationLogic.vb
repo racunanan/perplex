@@ -3,10 +3,12 @@ Imports System.Text
 
 Module translationLogic
     Sub sap2oracle(ByVal srcPath As String)
-
         'Output class creation
         Dim oracle As oracleClass = New oracleClass
-        Dim read = Newtonsoft.Json.Linq.JObject.Parse(srcPath)
+        Dim json As String
+        json = My.Computer.FileSystem.ReadAllText(srcPath, System.Text.Encoding.Default)
+        Dim read = Newtonsoft.Json.Linq.JObject.Parse(json)
+
         oracle.operatingUnit = ""
         oracle.PO = read.Item("poNumber").ToString
         oracle.rev = ""
@@ -25,8 +27,7 @@ Module translationLogic
         oracle.description = ""
 
         ' Filling up items field
-        For i As Integer = 0 To read.Item("items").ToArray.Length
-            ' Hope repeated dims are allowed
+        For i As Integer = 0 To read.Item("items").ToArray.Length - 1
             Dim tempItem As oracleItem = New oracleItem
             tempItem.num = read.Item("items")(i)("itemNo").ToString
             tempItem.type = ""
@@ -34,7 +35,7 @@ Module translationLogic
             tempItem.rev = ""
             tempItem.job = ""
             tempItem.category = ""
-            tempItem.description = read.Item("items")(i)("itemCodeDescritpion").ToString
+            tempItem.description = read.Item("items")(i)("itemCodeItemDescription").ToString
             tempItem.UOM = read.Item("items")(i)("UOM").ToString
             tempItem.quantity = read.Item("items")(i)("quantity").ToString
             tempItem.price = read.Item("items")(i)("unitPrice").ToString
@@ -45,20 +46,109 @@ Module translationLogic
             tempItem.amount = read.Item("items")(i)("amount").ToString
 
             ' No idea what charge account is. Did not add yet
-            ' Pray that somehow the list made is a shallow copy of the dict
-            ' If not, find out a way to make a shallow copy that is repeatable
-
-            ' LIKELY DEATH POINT
             oracle.items.Add(tempItem)
         Next
 
         ' Put stubs here kung sinipag
-        Dim fs As FileStream = File.Create(srcPath)
+
+        Dim fs As FileStream = File.Create(GlobalVariables.filepath + "/converted_" + GlobalVariables.filename)
         Dim strserialize As String = Newtonsoft.Json.JsonConvert.SerializeObject(oracle)
         Dim info As Byte() = New UTF8Encoding(True).GetBytes(strserialize)
         fs.Write(info, 0, info.Length)
         fs.Close()
 
+    End Sub
+
+    Sub sap2netsuite(ByVal srcPath As String)
+        Dim netsuite As New netsuiteClass
+        Dim json As String
+        json = My.Computer.FileSystem.ReadAllText(srcPath, System.Text.Encoding.Default)
+        Dim read = Newtonsoft.Json.Linq.JObject.Parse(json)
+
+        netsuite.document = read.Item("documentType").ToString
+        netsuite.companyName = read.Item("company")("companyName").ToString
+        netsuite.address = read.Item("company")("address").ToString
+        netsuite.poNumber = read.Item("poNumber").ToString
+        netsuite.poDate = read.Item("poDate").ToString
+        netsuite.purchaseFrom.vendorID = ""
+        netsuite.purchaseFrom.vendorName = read.Item("vendor")("name").ToString
+        netsuite.purchaseFrom.address = read.Item("vendor")("address").ToString
+        netsuite.purchaseFrom.contactName = ""
+        netsuite.shipTo.companyName = read.Item("shipTo")("name").ToString
+        netsuite.shipTo.address = read.Item("shipTo")("address").ToString
+        netsuite.shipTo.contactName = ""
+        netsuite.shippingMethod = ""
+        netsuite.paymentTerms = read.Item("termsAndCondition")("payment").ToString
+        netsuite.requiredByDate = read.Item("items")(0)("deliveryDate").ToString
+
+        ' Filling up items field
+        For i As Integer = 0 To read.Item("items").ToArray.Length - 1
+            Dim tempItem As netsuiteItem = New netsuiteItem
+            tempItem.itemDescription = read.Item("items")(i)("itemCodeItemDescription").ToString
+            tempItem.quantity = read.Item("items")(i)("quantity").ToString
+            tempItem.unitPrice = read.Item("items")(i)("unitPrice").ToString
+            tempItem.amount = read.Item("items")(i)("amount").ToString
+            ' Stub for items here if you wish
+            netsuite.items.Add(tempItem)
+        Next
+        netsuite.subtotal = read.Item("total").ToString
+        netsuite.salesTax = read.Item("tax").ToString
+        netsuite.orderTotal = read.Item("totalPlusTax").ToString
+        netsuite.approvedBy = read.Item("termsAndCondition")("issuedBy").ToString
+        ' Put stubs here kung sinipag
+
+
+        Dim fs As FileStream = File.Create(GlobalVariables.filepath + "/converted_" + GlobalVariables.filename)
+        Dim strserialize As String = Newtonsoft.Json.JsonConvert.SerializeObject(netsuite)
+        Dim info As Byte() = New UTF8Encoding(True).GetBytes(strserialize)
+        fs.Write(info, 0, info.Length)
+        fs.Close()
+    End Sub
+
+    Sub oracle2netsuite(ByVal srcPath As String)
+        Dim netsuite As New netsuiteClass
+        Dim json As String
+        json = My.Computer.FileSystem.ReadAllText(srcPath, System.Text.Encoding.Default)
+        Dim read = Newtonsoft.Json.Linq.JObject.Parse(json)
+
+        netsuite.document = read.Item("type").ToString
+        netsuite.companyName = ""
+        netsuite.address = ""
+        netsuite.poNumber = read.Item("PO").ToString
+        netsuite.poDate = read.Item("created").ToString
+        netsuite.purchaseFrom.vendorID = ""
+        netsuite.purchaseFrom.vendorName = read.Item("supplier").ToString
+        netsuite.purchaseFrom.address = ""
+        netsuite.purchaseFrom.contactName = ""
+        netsuite.shipTo.companyName = read.Item("shipTo").ToString
+        netsuite.shipTo.address = read.Item("site").ToString
+        netsuite.shipTo.contactName = ""
+        netsuite.shippingMethod = ""
+        netsuite.paymentTerms = ""
+        netsuite.requiredByDate = read.Item("items")(0)("needBy").ToString
+
+        ' Filling up items field
+        For i As Integer = 0 To read.Item("items").ToArray.Length - 1
+            Dim tempItem As netsuiteItem = New netsuiteItem
+            tempItem.itemDescription = read.Item("items")(i)("description").ToString
+            tempItem.quantity = read.Item("items")(i)("quantity").ToString
+            tempItem.unitPrice = read.Item("items")(i)("price").ToString
+            tempItem.amount = read.Item("items")(i)("amount").ToString
+            ' Stub for items here if you wish
+            netsuite.items.Add(tempItem)
+        Next
+        netsuite.subtotal = read.Item("total").ToString
+        netsuite.salesTax = ""
+        netsuite.orderTotal = ""
+        netsuite.approvedBy = read.Item("buyer").ToString
+        ' Put stubs here kung sinipag
+
+
+        Dim fs As FileStream = File.Create(GlobalVariables.filepath + "/converted_" + GlobalVariables.filename)
+        Dim strserialize As String = Newtonsoft.Json.JsonConvert.SerializeObject(netsuite)
+        Dim info As Byte() = New UTF8Encoding(True).GetBytes(strserialize)
+        fs.Write(info, 0, info.Length)
+        fs.Close()
     End Sub
 
 

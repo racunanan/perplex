@@ -43,7 +43,6 @@ Public Class welcomeForm
             Label47.Text = read.Item("items")(0)("quantity").ToString
             Label48.Text = read.Item("shippingMethod").ToString
 
-
             Label14.Visible = True
             Label15.Visible = True
             Label16.Visible = True

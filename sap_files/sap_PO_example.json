@@ -1,44 +1,44 @@
 {
-    "documentType": "Purchase Order",
-    "company": {
-        "companyName": "ABC, Inc.",
-        "address": "Anywhere City",
-        "contactNo": "0123456789",
-        "TIN": "123456789"
-    },
-    "vendor": {
-        "name": "XYZ, Inc.",
-        "address": "Nowhere City",
-        "contactNo": "0987654321",
-        "TIN": "987654321"
-    },
-    "shipTo": {
-        "name": "ABC Warehouse 1",
-        "address": "Anywhere City",
-        "contactNo": "0123456789"
-    },
-    "poNumber": "2512000855",
-    "poDate": "25/10/2022",
-    "pageNumber": "1/1",
-    "items": [
-        {
-            "itemNo": 1,
-            "vendorItemCode": "Vendor ABC V0001",
-            "itemCodeItemDescription": "Product X",
-            "UOM": "Piece",
-            "deliveryDate": "30/10/2022",
-            "quantity": 150,
-            "unitPrice": 250,
-            "amount": 37500
-        }
-    ],
-    "total": 37500,
-    "tax": 5625,
-    "totalPlusTax": 43125,
-    "termsAndCondition": {
-        "payment": " 30 days",
-        "issuedBy": "Mr. Juan dela Cruz",
-        "remarks": "Free delivery"
-    },
-    "stubs": []
+  "documentType": "Purchase Order",
+  "company": {
+    "companyName": "ABC, Inc.",
+    "address": "Anywhere City",
+    "contactNo": "0123456789",
+    "TIN": "123456789"
+  },
+  "vendor": {
+    "name": "XYZ, Inc.",
+    "address": "Nowhere City",
+    "contactNo": "0987654321",
+    "TIN": "987654321"
+  },
+  "shipTo": {
+    "name": "ABC Warehouse 1",
+    "address": "Anywhere City",
+    "contactNo": "0123456789"
+  },
+  "poNumber": "2512000855",
+  "poDate": "25/10/2022",
+  "pageNumber": "1/1",
+  "items": [
+    {
+      "itemNo": 1,
+      "vendorItemCode": "Vendor ABC V0001",
+      "itemCodeItemDescription": "Product X",
+      "UOM": "Piece",
+      "deliveryDate": "30/10/2022",
+      "quantity": 150,
+      "unitPrice": 250,
+      "amount": 37500
+    }
+  ],
+  "total": 37500,
+  "tax": 5625,
+  "totalPlusTax": 43125,
+  "termsAndCondition": {
+    "payment": " 30 days",
+    "issuedBy": "Mr. Juan dela Cruz",
+    "remarks": "Free delivery"
+  },
+  "stubs": []
 }

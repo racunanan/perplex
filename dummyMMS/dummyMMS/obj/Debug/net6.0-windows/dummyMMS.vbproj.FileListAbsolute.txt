@@ -17,3 +17,22 @@ D:\docs 4 deng\cs\eng150\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\refint\dummy
 D:\docs 4 deng\cs\eng150\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.pdb
 D:\docs 4 deng\cs\eng150\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.genruntimeconfig.cache
 D:\docs 4 deng\cs\eng150\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\ref\dummyMMS.dll
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\bin\Debug\net6.0-windows\dummyMMS.exe
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\bin\Debug\net6.0-windows\dummyMMS.deps.json
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\bin\Debug\net6.0-windows\dummyMMS.runtimeconfig.json
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\bin\Debug\net6.0-windows\dummyMMS.dll
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\bin\Debug\net6.0-windows\dummyMMS.pdb
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.vbproj.AssemblyReference.cache
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.welcomeForm.resources
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.vbproj.GenerateResource.cache
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.GeneratedMSBuildEditorConfig.editorconfig
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.AssemblyInfoInputs.cache
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.AssemblyInfo.vb
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.vbproj.CoreCompileInputs.cache
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.vbproj.CopyComplete
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.dll
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\refint\dummyMMS.dll
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.pdb
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\dummyMMS.genruntimeconfig.cache
+D:\docs4deng\cs\babu\perplex\dummyMMS\dummyMMS\obj\Debug\net6.0-windows\ref\dummyMMS.dll

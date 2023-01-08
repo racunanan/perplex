@@ -28,14 +28,16 @@ Public Class StartTask
     End Sub
 
     Private Sub startButton_Click(sender As Object, e As EventArgs) Handles startButton.Click
-        Dim oProcess As New Process()
-        Dim oStartInfo As New ProcessStartInfo("py", "./../jsontranslator.py ./../sap_files/sap_PO_example.json 1")
-        'Dim oStartInfo As New ProcessStartInfo("py", "./../jsontranslator.py" + " " + OpenFileDialog1.FileName + " " + GlobalVariables.mode)
-        oStartInfo.UseShellExecute = False
-        oStartInfo.RedirectStandardOutput = True
-        oProcess.StartInfo = oStartInfo
-        oProcess.StartInfo.CreateNoWindow = True ' to hide cmd window. and it's has to be here,before start and before startinfo=startinfo
-        oProcess.Start()
-        Close()
+        ' Calling translation function
+        GlobalVariables.filename = System.IO.Path.GetFileName(OpenFileDialog1.FileName)
+        GlobalVariables.filepath = System.IO.Path.GetDirectoryName(OpenFileDialog1.FileName)
+        If GlobalVariables.mode.Equals("1") Then
+            translationLogic.sap2oracle(OpenFileDialog1.FileName)
+        ElseIf GlobalVariables.mode.Equals("2") Then
+            translationLogic.sap2netsuite(OpenFileDialog1.FileName)
+        ElseIf GlobalVariables.mode.Equals("3") Then
+            translationLogic.oracle2netsuite(OpenFileDialog1.FileName)
+        End If
+        ' Maybe hide the prompt too
     End Sub
 End Class

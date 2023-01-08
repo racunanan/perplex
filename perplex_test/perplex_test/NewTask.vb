@@ -42,13 +42,16 @@ Public Class NewTask
         SourceToDest = NewSourceChosen + " to " + NewDestinationChosen
 
         If AddedTask <> "" Then
-            'If SourceToDest.Equals("SAP to Oracle") Then
-            'GlobalVariables.mode = "1"
-            'ElseIf SourceToDest.Equals("SAP to NetSuite") Then
-            'balVariables.mode = "2"
-            'ElseIf SourceToDest.Equals("Oracle to NetSuite") Then
-            'GlobalVariables.mode = "3"
-            'End If
+            ' Can probably clean this up. This check and startTask check are redundant
+            ' Really dont want to rn. Sorry
+
+            If SourceToDest.Equals("SAP to Oracle") Then
+                GlobalVariables.mode = "1"
+            ElseIf SourceToDest.Equals("SAP to NetSuite") Then
+                GlobalVariables.mode = "2"
+            ElseIf SourceToDest.Equals("Oracle to NetSuite") Then
+                GlobalVariables.mode = "3"
+            End If
             My.Forms.MainPage.TaskList.Items.Add(AddedTask)
             Close()
         End If
@@ -63,4 +66,6 @@ End Class
 
 Public Class GlobalVariables
     Public Shared mode As String
+    Public Shared filename As String
+    Public Shared filepath As String
 End Class

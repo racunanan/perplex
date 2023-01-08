@@ -16,7 +16,7 @@
     Public Property currency As String
     Public Property total As String
     Public Property description As String
-    Public Property items As List(Of oracleItem)
+    Public Property items As New List(Of oracleItem)()
     Public Property stubs As oracleStubs
 
 End Class
