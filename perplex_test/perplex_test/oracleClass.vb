@@ -1,5 +1,4 @@
 ﻿Public Class oracleClass
-
     Public Property operatingUnit As String
     Public Property PO As String
     Public Property rev As String
@@ -17,7 +16,7 @@
     Public Property total As String
     Public Property description As String
     Public Property items As New List(Of oracleItem)()
-    Public Property stubs As oracleStubs
+    Public Property stubs As New oracleStubs
 
 End Class
 

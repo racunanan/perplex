@@ -55,23 +55,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\RAC\\.nuget\\packages\\": {},
+    "C:\\Users\\MYPC\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummySAP\\dummySAP\\dummySAP.vbproj",
+      "projectUniqueName": "D:\\docs4deng\\cs\\babu\\perplex\\dummySAP\\dummySAP\\dummySAP.vbproj",
       "projectName": "dummySAP",
-      "projectPath": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummySAP\\dummySAP\\dummySAP.vbproj",
-      "packagesPath": "C:\\Users\\RAC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummySAP\\dummySAP\\obj\\",
+      "projectPath": "D:\\docs4deng\\cs\\babu\\perplex\\dummySAP\\dummySAP\\dummySAP.vbproj",
+      "packagesPath": "C:\\Users\\MYPC\\.nuget\\packages\\",
+      "outputPath": "D:\\docs4deng\\cs\\babu\\perplex\\dummySAP\\dummySAP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\RAC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MYPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

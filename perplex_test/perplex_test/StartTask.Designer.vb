@@ -109,10 +109,6 @@ Partial Class StartTask
         Me.SelectFileBtn.Text = "Choose..."
         Me.SelectFileBtn.UseVisualStyleBackColor = True
         '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
         'StartTask
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)

@@ -152,6 +152,55 @@ Module translationLogic
         fs.Close()
     End Sub
 
+    Sub oracle2sap(ByVal srcPath As String)
+        Dim sap As New sapClass
+        Dim json As String
+        json = My.Computer.FileSystem.ReadAllText(srcPath, System.Text.Encoding.Default)
+        Dim read = Newtonsoft.Json.Linq.JObject.Parse(json)
+
+        sap.documentType = read.Item("type").ToString
+        sap.company.companyName = ""
+        sap.company.address = ""
+        sap.company.TIN = ""
+        sap.vendor.name = read.Item("supplier").ToString
+        sap.vendor.address = ""
+        sap.vendor.contactNo = ""
+        sap.vendor.TIN = ""
+        sap.poNumber = read.Item("PO").ToString
+        sap.poDate = read.Item("created").ToString
+        sap.pageNumber = ""
+
+        ' Filling up items field
+        For i As Integer = 0 To read.Item("items").ToArray.Length - 1
+            Dim tempItem As sapItem = New sapItem
+            tempItem.itemNo = read.Item("items")(i)("num").ToString
+            tempItem.vendorItemCode = read.Item("items")(i)("item").ToString
+            tempItem.itemCodeItemDescription = read.Item("items")(i)("description").ToString
+            tempItem.UOM = read.Item("items")(i)("UOM").ToString
+            tempItem.deliveryDate = read.Item("items")(i)("needBy").ToString
+            tempItem.quantity = read.Item("items")(i)("quantity").ToString
+            tempItem.unitPrice = read.Item("items")(i)("price").ToString
+            tempItem.amount = read.Item("items")(i)("amount").ToString
+            ' Stub for items here if you wish
+            sap.items.Add(tempItem)
+        Next
+        sap.total = read.Item("total").ToString
+        sap.tax = ""
+        sap.totalPlusTax = ""
+
+        sap.termsAndCondition.payment = ""
+        sap.termsAndCondition.issuedBy = read.Item("buyer").ToString
+        sap.termsAndCondition.remarks = read.Item("description").ToString
+        ' Put stubs here kung sinipag
+
+
+        Dim fs As FileStream = File.Create(GlobalVariables.filepath + "/converted_" + GlobalVariables.filename)
+        Dim strserialize As String = Newtonsoft.Json.JsonConvert.SerializeObject(sap)
+        Dim info As Byte() = New UTF8Encoding(True).GetBytes(strserialize)
+        fs.Write(info, 0, info.Length)
+        fs.Close()
+    End Sub
+
 
 
 

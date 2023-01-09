@@ -34,10 +34,12 @@
 
     Private Sub StartTaskButton_Click(sender As Object, e As EventArgs) Handles StartTaskButton.Click
         Dim startTask As New StartTask
+        GlobalVariables.mode = TaskList.GetItemText(TaskList.SelectedItem)
         startTask.Show()
     End Sub
 
     Private Sub TaskList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TaskList.SelectedIndexChanged
+        GlobalVariables.mode = TaskList.GetItemText(TaskList.SelectedItem)
         StartTaskButton.Enabled = True
         RemoveTaskButton.Enabled = True
     End Sub

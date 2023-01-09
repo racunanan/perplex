@@ -4,8 +4,8 @@
     Public Property address As String
     Public Property poNumber As String
     Public Property poDate As String
-    Public Property purchaseFrom As NpurchaseFrom
-    Public Property shipTo As NshipTo
+    Public Property purchaseFrom As New NpurchaseFrom
+    Public Property shipTo As New NshipTo
     Public Property shippingMethod As String
     Public Property paymentTerms As String
     Public Property requiredByDate As String
@@ -14,7 +14,7 @@
     Public Property salesTax As String
     Public Property orderTotal As String
     Public Property approvedBy As String
-    Public Property stubs As netsuiteStubs
+    Public Property stubs As New netsuiteStubs
 
 End Class
 

@@ -32,12 +32,15 @@ Public Class StartTask
         ' Calling translation function
         GlobalVariables.filename = System.IO.Path.GetFileName(OpenFileDialog1.FileName)
         GlobalVariables.filepath = System.IO.Path.GetDirectoryName(OpenFileDialog1.FileName)
-        If GlobalVariables.mode.Equals("1") Then
+
+        If GlobalVariables.mode.Equals("Purchase Order (PO) Transfer: SAP to Oracle") Then
             translationLogic.sap2oracle(OpenFileDialog1.FileName)
-        ElseIf GlobalVariables.mode.Equals("2") Then
+        ElseIf GlobalVariables.mode.Equals("Purchase Order (PO) Transfer: SAP to Netsuite") Then
             translationLogic.sap2netsuite(OpenFileDialog1.FileName)
-        ElseIf GlobalVariables.mode.Equals("3") Then
+        ElseIf GlobalVariables.mode.Equals("Purchase Order (PO) Transfer: Oracle to Netsuite") Then
             translationLogic.oracle2netsuite(OpenFileDialog1.FileName)
+        ElseIf GlobalVariables.mode.Equals("Purchase Order (PO) Transfer: Oracle to SAP") Then
+            translationLogic.oracle2sap(OpenFileDialog1.FileName)
         End If
         Close()
     End Sub
