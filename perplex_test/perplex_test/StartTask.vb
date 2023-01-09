@@ -24,6 +24,7 @@ Public Class StartTask
     Private Sub SelectFileBtn_Click(sender As Object, e As EventArgs) Handles SelectFileBtn.Click
         If OpenFileDialog1.ShowDialog <> Windows.Forms.DialogResult.Cancel Then
             Filename.Text = OpenFileDialog1.FileName
+            startButton.Enabled = True
         End If
     End Sub
 
@@ -39,5 +40,7 @@ Public Class StartTask
             translationLogic.oracle2netsuite(OpenFileDialog1.FileName)
         End If
         ' Maybe hide the prompt too
+
+        Close()
     End Sub
 End Class

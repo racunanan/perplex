@@ -56,6 +56,7 @@ Partial Class StartTask
         '
         'startButton
         '
+        Me.startButton.Enabled = False
         Me.startButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.startButton.Location = New System.Drawing.Point(97, 130)
         Me.startButton.Name = "startButton"

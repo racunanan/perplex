@@ -73,6 +73,7 @@ Partial Class MainPage
         '
         'RemoveAppButton
         '
+        Me.RemoveAppButton.Enabled = False
         Me.RemoveAppButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RemoveAppButton.Location = New System.Drawing.Point(515, 280)
         Me.RemoveAppButton.Name = "RemoveAppButton"
@@ -123,6 +124,7 @@ Partial Class MainPage
         '
         'StartTaskButton
         '
+        Me.StartTaskButton.Enabled = False
         Me.StartTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.StartTaskButton.Location = New System.Drawing.Point(607, 302)
         Me.StartTaskButton.Name = "StartTaskButton"
@@ -133,6 +135,7 @@ Partial Class MainPage
         '
         'RemoveTaskButton
         '
+        Me.RemoveTaskButton.Enabled = False
         Me.RemoveTaskButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.RemoveTaskButton.Location = New System.Drawing.Point(337, 302)
         Me.RemoveTaskButton.Name = "RemoveTaskButton"
