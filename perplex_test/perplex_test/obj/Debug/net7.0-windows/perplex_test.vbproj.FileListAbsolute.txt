@@ -81,3 +81,5 @@ D:\docs4deng\cs\babu\perplex\perplex_test\perplex_test\obj\Debug\net7.0-windows\
 D:\docs4deng\cs\babu\perplex\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.NewTask.resources
 D:\docs4deng\cs\babu\perplex\perplex_test\perplex_test\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
 D:\docs4deng\cs\babu\perplex\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.vbproj.CopyComplete
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\perplex_test\perplex_test\bin\Debug\net7.0-windows\Newtonsoft.Json.dll
+C:\Users\RAC\Desktop\CollegeStuff\year4\firstSem\engg_150\project\perplex\perplex_test\perplex_test\obj\Debug\net7.0-windows\perplex_test.vbproj.CopyComplete

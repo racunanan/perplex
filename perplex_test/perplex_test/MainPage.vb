@@ -9,6 +9,10 @@
 
         item = ActiveApps.GetItemText(ActiveApps.SelectedItem)
         ActiveApps.Items.Remove(item)
+
+        If ActiveApps.SelectedIndex < 0 Then
+            RemoveAppButton.Enabled = False
+        End If
     End Sub
 
     Private Sub AddTaskButton_Click(sender As Object, e As EventArgs) Handles AddTaskButton.Click
@@ -21,6 +25,11 @@
 
         item = TaskList.GetItemText(TaskList.SelectedItem)
         TaskList.Items.Remove(item)
+
+        If TaskList.SelectedIndex < 0 Then
+            StartTaskButton.Enabled = False
+            RemoveTaskButton.Enabled = False
+        End If
     End Sub
 
     Private Sub StartTaskButton_Click(sender As Object, e As EventArgs) Handles StartTaskButton.Click
@@ -28,4 +37,12 @@
         startTask.Show()
     End Sub
 
+    Private Sub TaskList_SelectedIndexChanged(sender As Object, e As EventArgs) Handles TaskList.SelectedIndexChanged
+        StartTaskButton.Enabled = True
+        RemoveTaskButton.Enabled = True
+    End Sub
+
+    Private Sub ActiveApps_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ActiveApps.SelectedIndexChanged
+        RemoveAppButton.Enabled = True
+    End Sub
 End Class
