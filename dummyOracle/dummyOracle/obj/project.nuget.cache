@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qYX6rZVU762YgISbcat/VpR9BpFCAOzvhr0phJfjuPVKMuCf+LK/0nxka1zJ4lUJhjn1kWS2ROFjHA07mYnaQQ==",
+  "dgSpecHash": "CneIKaF08RrifTCaHJrLIRfjAV++605lcLeLcHVZ3ndq3gZviajLk2oa4w3L/2uHplTggDLuB2q0o8H69RXufA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj",
+  "projectFilePath": "D:\\docs4deng\\cs\\babu\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj",
   "expectedPackageFiles": [
-    "C:\\Users\\RAC\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\MYPC\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
 }

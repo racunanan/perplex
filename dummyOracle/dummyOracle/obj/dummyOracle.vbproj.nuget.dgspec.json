@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj": {}
+    "D:\\docs4deng\\cs\\babu\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj": {
+    "D:\\docs4deng\\cs\\babu\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj",
+        "projectUniqueName": "D:\\docs4deng\\cs\\babu\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj",
         "projectName": "dummyOracle",
-        "projectPath": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj",
-        "packagesPath": "C:\\Users\\RAC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\RAC\\Desktop\\CollegeStuff\\year4\\firstSem\\engg_150\\project\\perplex\\dummyOracle\\dummyOracle\\obj\\",
+        "projectPath": "D:\\docs4deng\\cs\\babu\\perplex\\dummyOracle\\dummyOracle\\dummyOracle.vbproj",
+        "packagesPath": "C:\\Users\\MYPC\\.nuget\\packages\\",
+        "outputPath": "D:\\docs4deng\\cs\\babu\\perplex\\dummyOracle\\dummyOracle\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\RAC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MYPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

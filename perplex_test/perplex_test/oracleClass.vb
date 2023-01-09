@@ -37,6 +37,7 @@ Public Class oracleItem
     Public Property supplierItem As String
     Public Property supplierConfigID As String
     Public Property amount As String
+    Public Property chargeAccount As String
 
 End Class
 

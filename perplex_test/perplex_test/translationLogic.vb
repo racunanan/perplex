@@ -29,6 +29,7 @@ Module translationLogic
         ' Filling up items field
         For i As Integer = 0 To read.Item("items").ToArray.Length - 1
             Dim tempItem As oracleItem = New oracleItem
+
             tempItem.num = read.Item("items")(i)("itemNo").ToString
             tempItem.type = ""
             tempItem.item = read.Item("items")(i)("vendorItemCode").ToString
@@ -44,8 +45,8 @@ Module translationLogic
             tempItem.supplierItem = ""
             tempItem.supplierConfigID = ""
             tempItem.amount = read.Item("items")(i)("amount").ToString
+            tempItem.chargeAccount = ""
 
-            ' No idea what charge account is. Did not add yet
             oracle.items.Add(tempItem)
         Next
 

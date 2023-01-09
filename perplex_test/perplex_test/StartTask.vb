@@ -38,6 +38,6 @@ Public Class StartTask
         ElseIf GlobalVariables.mode.Equals("3") Then
             translationLogic.oracle2netsuite(OpenFileDialog1.FileName)
         End If
-        ' Maybe hide the prompt too
+        Close()
     End Sub
 End Class
